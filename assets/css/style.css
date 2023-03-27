@@ -114,7 +114,7 @@ header {
 }
 
 .metext {
-  padding: 0 100px;
+  padding: 0 100px 50px 100px;
 }
 @media screen and (max-width: 767px) {
   .metext {
@@ -136,7 +136,7 @@ header {
 }
 
 .skillp {
-  padding-top: 300px;
+  padding-top: 250px;
   letter-spacing: 0.1em;
 }
 .skillp p {
@@ -180,6 +180,10 @@ header {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+}
+.card a {
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .card text {
@@ -262,6 +266,7 @@ header {
   left: 0;
   border-top: 5px solid rgb(236, 217, 193);
   border-left: 5px solid rgb(236, 217, 193);
+  z-index: 1;
 }
 
 .card::after {
@@ -269,6 +274,7 @@ header {
   bottom: 0;
   border-right: 5px solid rgb(236, 217, 193);
   border-bottom: 5px solid rgb(236, 217, 193);
+  z-index: 1;
 }
 
 .card:hover::before,
