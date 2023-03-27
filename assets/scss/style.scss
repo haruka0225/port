@@ -40,6 +40,11 @@ h2 {
     }
 }
 
+p {
+    font-size: 10px;
+    text-align: center;
+}
+
 // ヘッダー
 header {
 
@@ -83,9 +88,6 @@ header {
 }
 
 
-
-
-
 // ヘッダー　ここまで
 
 
@@ -112,6 +114,14 @@ header {
     p {
         font-size: 20px;
     }
+
+    @include sp {
+        position: absolute;
+        top: 350px;
+        left:100px;
+        opacity: 1;
+  
+    }
 }
 
 
@@ -137,12 +147,15 @@ header {
 
 .metext {
     padding: 0 100px;
+
+    @include sp {
+        top: 350px;
+        left:100px;
+     
+    }
 }
 
-p {
-    font-size: 5px;
-    text-align: center;
-}
+
 
 
 // skill
@@ -164,7 +177,7 @@ p {
     letter-spacing: 0.1em;
 
     p {
-        margin: 5px auto;
+        margin: 10px auto;  
     }
 
     @include sp {
@@ -205,7 +218,7 @@ p {
         margin: 0 auto;
         padding-top: 50px;
         padding-bottom: 50px;
-    }
+    } 
 }
 
 .card text {

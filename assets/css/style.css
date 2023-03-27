@@ -20,6 +20,11 @@ h2 {
   }
 }
 
+p {
+  font-size: 10px;
+  text-align: center;
+}
+
 header {
   background: url(../img/kv.png) center/cover;
   position: relative;
@@ -81,6 +86,14 @@ header {
 .me-item p {
   font-size: 20px;
 }
+@media screen and (max-width: 767px) {
+  .me-item {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    opacity: 1;
+  }
+}
 
 .me {
   width: 70%;
@@ -103,10 +116,11 @@ header {
 .metext {
   padding: 0 100px;
 }
-
-p {
-  font-size: 5px;
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .metext {
+    top: 350px;
+    left: 100px;
+  }
 }
 
 .skill {
@@ -126,7 +140,7 @@ p {
   letter-spacing: 0.1em;
 }
 .skillp p {
-  margin: 5px auto;
+  margin: 10px auto;
 }
 @media screen and (max-width: 767px) {
   .skillp {
