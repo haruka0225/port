@@ -34,6 +34,9 @@ h2 {
         font-size: 20px;
         text-align: center;
         padding: 20px;
+        padding-top: 100px;
+
+
     }
 }
 
@@ -151,6 +154,7 @@ p {
     @include sp {
 
         width: 100%;
+        height: 100vh;
     }
 }
 
@@ -195,6 +199,7 @@ p {
         width: 70%;
         text-align: center;
         margin: 0 auto;
+        padding-top: 50px;
         padding-bottom: 50px;
     }
 }
@@ -205,6 +210,7 @@ p {
 
 
 // お問合せ
+
 .contact {
     padding-top: 100px;
     text-align: center;
