@@ -222,6 +222,8 @@ header {
     a{
         cursor: pointer;  
         z-index: 1001;
+        position: relative;
+        display: block;
     }
 }
 
