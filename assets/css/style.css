@@ -11,6 +11,12 @@ h2 {
   letter-spacing: 0.2em;
   font-size: 30px;
 }
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
 
 header {
   background: url(../img/kv.png) center/cover;
@@ -20,6 +26,11 @@ header {
   z-index: 999;
   opacity: 0.9;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  header {
+    width: 100%;
+  }
 }
 
 .menu {
@@ -31,15 +42,17 @@ header {
   font-size: 20px;
   position: relative;
   justify-content: space-around;
-}
-
-li {
   list-style: none;
   color: rgb(252, 217, 175);
 }
+@media screen and (max-width: 767px) {
+  .menu li {
+    font-size: 10px;
+  }
+}
 
 .me-box {
-  padding-top: 100px;
+  padding-top: 150px;
   position: relative;
 }
 
@@ -64,6 +77,16 @@ li {
   margin: 0 auto;
   position: relative;
 }
+.me:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 767px) {
+  .me {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+}
 
 .metext {
   padding: 0 100px;
@@ -79,10 +102,18 @@ p {
   height: 120vh;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .skill {
+    width: 100%;
+  }
+}
 
 .skillp {
   padding-top: 300px;
   letter-spacing: 0.1em;
+}
+.skillp p {
+  margin: 5px auto;
 }
 
 .button1 {
@@ -97,13 +128,25 @@ p {
 .card-group {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .card-group {
+    display: block;
+  }
+}
 
 .card {
   width: 33%;
   height: auto;
   padding: 10px;
   box-shadow: 0 10px 25px 0 rgba(206, 192, 203, 0.5);
-  z-index: 100;
+}
+@media screen and (max-width: 767px) {
+  .card {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
 }
 
 .card text {
@@ -150,6 +193,12 @@ p {
   border-radius: 50px 50px 0 0;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
+}
+@media screen and (max-width: 767px) {
+  .heart:before,
+  .heart:after {
+    position: static;
+  }
 }
 
 .heart:after {
@@ -204,4 +253,9 @@ footer {
 }
 footer p {
   padding-top: 50px;
+}
+@media screen and (max-width: 767px) {
+  footer {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
